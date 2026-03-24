@@ -21,6 +21,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="nl" className="scroll-smooth">
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body className={`${inter.className} bg-black text-white overflow-x-hidden`}>
         {children}
       </body>

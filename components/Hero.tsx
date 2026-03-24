@@ -14,15 +14,17 @@ interface HeroProps {
 export default function Hero({ subtitle, children, cta }: HeroProps) {
   return (
     <div className="relative w-full h-screen overflow-hidden bg-black flex items-center justify-center">
-      {/* Video background with overlay */}
+      {/* Background image */}
       <div
-        className="absolute inset-0 bg-gradient-to-b from-black via-black/70 to-black/80"
+        className="absolute inset-0"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23260d00" width="1200" height="800"/><circle cx="600" cy="400" r="150" fill="%23c26a2e" opacity="0.1"/></svg>')`,
+          backgroundImage: `url('https://images.unsplash.com/photo-1475483768296-6163e08872a1?w=1920&q=80')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       />
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black" />
 
       {/* Content */}
       <motion.div
@@ -31,7 +33,7 @@ export default function Hero({ subtitle, children, cta }: HeroProps) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}
       >
-        <h1 className="text-6xl md:text-7xl font-display font-bold mb-4 text-white leading-tight">
+        <h1 className="text-6xl md:text-8xl font-display font-bold mb-4 text-white leading-tight">
           OERBAZEN
         </h1>
 
