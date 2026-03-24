@@ -45,7 +45,12 @@ export default function Form() {
 
     try {
       // Using Formspree
-      const response = await fetch('https://formspree.io/f/YOUR_FORMSPREE_ID', {
+      const formspreeId = process.env.NEXT_PUBLIC_FORMSPREE_ID
+      if (!formspreeId) {
+        throw new Error('Formspree ID not configured')
+      }
+
+      const response = await fetch(`https://formspree.io/${formspreeId}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
