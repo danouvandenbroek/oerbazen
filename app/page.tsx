@@ -10,9 +10,9 @@ import CTA from '@/components/CTA'
 export default function Home() {
 
   const activities = [
-    { title: 'Obstacle Run', index: 0 },
-    { title: 'Bijlwerpen', index: 1 },
-    { title: 'Boomstam Dragen', index: 2 },
+    { title: 'Iets met bijlen', index: 0 },
+    { title: 'De rivier', index: 1 },
+    { title: 'Het bos', index: 2 },
     { title: 'Bouwen', index: 3 },
     { title: 'Precisie', index: 4 },
     { title: 'Teamwork', index: 5 },
@@ -36,9 +36,11 @@ export default function Home() {
       <Section className="bg-black py-24 px-4">
         <div className="max-w-2xl mx-auto text-center">
           <p className="text-xl md:text-2xl leading-relaxed">
-            Sommige retraites beginnen met stilte.
+            Voor mannen die voelen dat het anders moet.
             <br />
-            <span className="text-fire font-semibold mt-4 block">Wij beginnen met een bijl.</span>
+            <span className="text-fire font-semibold mt-4 block">
+              Maar geen stilteretraite nodig hebben om daarachter te komen.
+            </span>
           </p>
         </div>
       </Section>
@@ -47,12 +49,19 @@ export default function Home() {
       <Section className="bg-black py-32 px-4">
         <div className="max-w-3xl mx-auto space-y-6 text-center">
           <h2 className="text-display-lg font-display font-bold">
-            Drie dagen weg.
+            Veel mannen houden alles draaiend.
             <br />
-            Uit je hoofd.
+            Werk. Thuis. Verantwoordelijkheden.
             <br />
-            In je lijf.
+            En precies daarin raak je soms jezelf kwijt.
           </h2>
+          <div className="text-lg md:text-xl leading-relaxed text-gray-300 max-w-2xl mx-auto space-y-4 pt-6">
+            <p>Niet in één klap. Langzaam.</p>
+            <p>Tot je voelt dat er iets moet verschuiven.</p>
+            <p>Oerbazen is geen therapie, geen survivaltocht en geen ondernemersclub.</p>
+            <p>Het is een plek voor mannen die voelen dat het anders moet.</p>
+            <p>Niet om bevestigd te worden, maar om weer stevig te voelen waar ze staan.</p>
+          </div>
         </div>
       </Section>
 
@@ -83,22 +92,17 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* 5. DAG 2 — OERBAZEN GAMES */}
+      {/* 5. DAG 2 */}
       <Section id="dag2" className="bg-black">
         <DayBlock
           day={2}
-          title="OERBAZEN GAMES"
+          title="DE ANTI RETRAITERETRAITE"
           subtitle={
             <div className="space-y-4">
-              <p>Je werkt.</p>
-              <p>Je bouwt.</p>
-              <p>Je draagt.</p>
-              <p>Je lacht.</p>
-              <p className="text-fire font-semibold pt-4">
-                Voor het soort humor
-                <br />
-                dat je alleen met mannen begrijpt.
-              </p>
+              <p className="text-fire font-semibold">Weg uit de ruis. Terug in beweging.</p>
+              <p>Dag twee haalt je uit het denken en terug in beweging.</p>
+              <p>Niet met praatjes, maar met weerstand, ritme en de tribe om je heen.</p>
+              <p>Daar begint het kantelpunt.</p>
             </div>
           }
         >
@@ -146,8 +150,7 @@ export default function Home() {
 
       {/* 7. QUOTE BLOK */}
       <QuoteBlock
-        text="Soms moet een man even verdwijnen.
-        Zodat hij sterker terugkomt."
+        text="Soms moet een man even weg, zodat hij sterker terugkomt."
         bgColor="bg-black"
         textColor="text-white"
       />
@@ -165,10 +168,10 @@ export default function Home() {
         />
         <div className="relative z-10 max-w-3xl mx-auto space-y-8">
           <h2 className="text-display-md font-display font-bold text-center">
-            OERBAZEN IS GEEN EVENT.
+            DE TRIBE
           </h2>
           <div className="text-lg leading-relaxed text-center space-y-4">
-            <p className="text-fire font-semibold">Het is een tribe.</p>
+            <p className="text-fire font-semibold">Je komt alleen. Je gaat weg als één van de mannen.</p>
             <p>
               Mannen die elkaar blijven zien.
               <br />
@@ -212,13 +215,12 @@ export default function Home() {
       {/* 10. AFSLUITING */}
       <Section className="bg-black py-32 px-4">
         <div className="max-w-2xl mx-auto text-center space-y-6">
-          <p className="text-xl md:text-2xl leading-relaxed">
-            Je gaat naar huis.
-            <br />
-            Niet anders.
-            <br />
-            <span className="text-fire font-semibold">Maar wel scherper.</span>
-          </p>
+          <div className="text-xl md:text-2xl leading-relaxed space-y-3">
+            <p>Je gaat naar huis met:</p>
+            <p className="text-fire font-semibold">meer rust in jezelf</p>
+            <p className="text-fire font-semibold">meer vuur in je lijf</p>
+            <p className="text-fire font-semibold">minstens één inzicht dat je niet meer kunt negeren</p>
+          </div>
         </div>
       </Section>
 
@@ -229,7 +231,7 @@ export default function Home() {
             Klaar?
           </h3>
           <CTA
-            text="Word Oerbaas"
+            text="Meld je aan"
             href="/aanmelden"
             variant="primary"
           />
